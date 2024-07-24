@@ -1,4 +1,4 @@
-const arrayOperator = ["add", "substract", "divide", "multiply"];
+const arrayOperator = ["add", "substract", "divide", "multiply", "point"];
 for (let index = 0; index < 10; index++) {
   const button = document.getElementById(`button_${index}`);
   button.addEventListener("click", () => {
@@ -6,7 +6,7 @@ for (let index = 0; index < 10; index++) {
   });
 }
 
-for (let j = 0; j < 4; j++) {
+for (let j = 0; j < 5; j++) {
   const buttonOperator = document.getElementById(`button_${arrayOperator[j]}`);
   buttonOperator.addEventListener("click", () => {
     windows.value += buttonOperator.value;
